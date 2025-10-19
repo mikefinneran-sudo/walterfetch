@@ -1,14 +1,16 @@
-# ScrapeMaster
+# WalterFetch
 
-**Web scraping framework with proxy rotation, real data validation, and zero API dependencies**
+**AI-Powered Lead Generation Engine - Signal Through the Noise**
+
+_Formerly ScrapeMaster - now part of the WalterSignal ecosystem_
 
 ---
 
 ## What Is This?
 
-ScrapeMaster is a complete web scraping framework that can extract real business data from public sources **without expensive API subscriptions**.
+WalterFetch is a complete lead generation engine that extracts real business data from public sources **without expensive API subscriptions**.
 
-**Instead of paying $250/month for ZoomInfo or Apollo.io**, use ScrapeMaster with a $50/month proxy service to scrape:
+**Instead of paying $250/month for ZoomInfo or Apollo.io**, use WalterFetch with a $50/month proxy service to scrape:
 - Google Maps
 - Yellow Pages
 - Yelp
@@ -45,8 +47,8 @@ ScrapeMaster is a complete web scraping framework that can extract real business
 
 ```bash
 # Clone the repo
-git clone https://github.com/mikefinneran-sudo/scrapemaster.git
-cd scrapemaster
+git clone https://github.com/mikefinneran-sudo/walterfetch.git
+cd walterfetch
 
 # Install dependencies
 pip3 install httpx playwright beautifulsoup4 lxml pandas
@@ -140,7 +142,7 @@ validator.print_validation_report(results)
 
 ## Real Data Policy
 
-**ScrapeMaster enforces real, verified data only.**
+**WalterFetch enforces real, verified data only.**
 
 See `REAL_DATA_POLICY.md` for complete requirements.
 
@@ -180,12 +182,12 @@ See `REAL_DATA_POLICY.md` for complete requirements.
 
 | Approach | Cost/Month | Targets/Month | Quality |
 |----------|------------|---------------|---------|
-| **ScrapeMaster + Proxies** | $50 | 500+ | 85-95% |
+| **WalterFetch + Proxies** | $50 | 500+ | 85-95% |
 | ZoomInfo | $250 | 500+ | 90% |
 | Apollo.io | $99 | 500+ | 85% |
 | Manual Research | $0 | 100 | 95% |
 
-**Why ScrapeMaster:**
+**Why WalterFetch:**
 - 80% cheaper than ZoomInfo
 - 50% cheaper than Apollo.io
 - 5x faster than manual research
@@ -194,7 +196,7 @@ See `REAL_DATA_POLICY.md` for complete requirements.
 ## File Structure
 
 ```
-scrapemaster/
+walterfetch/
 ├── core/
 │   ├── engine.py              # Main scraping engine
 │   ├── validator.py           # Data validation
@@ -274,7 +276,9 @@ Questions? Read the docs:
 
 **Problem:** ZoomInfo ($250/month) and Apollo.io ($99/month) are expensive for small businesses and individual entrepreneurs.
 
-**Solution:** ScrapeMaster scrapes the same public data these APIs use, but directly from the source for just the cost of proxies ($50/month).
+**Solution:** WalterFetch scrapes the same public data these APIs use, but directly from the source for just the cost of proxies ($50/month).
+
+Part of the **WalterSignal** ecosystem - Elite AI consultancy delivering real results.
 
 **Built for:**
 - Private equity firms sourcing acquisition targets
