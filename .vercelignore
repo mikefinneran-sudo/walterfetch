@@ -1,0 +1,16 @@
+# Ignore Python backend files
+core/
+middleware/
+*.py
+__pycache__/
+*.pyc
+venv/
+env/
+
+# Ignore documentation
+*.md
+!README.md
+
+# Ignore git
+.git/
+.gitignore
