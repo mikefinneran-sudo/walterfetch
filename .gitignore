@@ -1,3 +1,10 @@
+# Next.js
+/.next/
+/out/
+/build
+.next
+next-env.d.ts
+
 # dependencies
 /node_modules
 /.pnp
@@ -6,12 +13,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
-/build
+/dist
 
 # misc
 .DS_Store
@@ -24,10 +27,20 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# Python (for backend scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
