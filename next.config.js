@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimized for Vercel deployment
+  reactStrictMode: true,
+  swcMinify: true,
 }
 
 module.exports = nextConfig
