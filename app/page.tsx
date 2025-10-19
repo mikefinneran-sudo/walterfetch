@@ -46,8 +46,31 @@ export default function Home() {
   ];
 
   const handleCheckout = async (priceId: string) => {
-    // TODO: Integrate Stripe checkout
-    alert('Stripe integration coming next!');
+    setSelectedPlan(priceId);
+
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ priceId }),
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        // Redirect to Stripe Checkout
+        window.location.href = data.url;
+      } else {
+        alert('Error: ' + (data.error || 'Unknown error'));
+        setSelectedPlan(null);
+      }
+    } catch (error) {
+      console.error('Checkout error:', error);
+      alert('Failed to start checkout. Please try again.');
+      setSelectedPlan(null);
+    }
   };
 
   return (
@@ -162,13 +185,14 @@ export default function Home() {
 
               <button
                 onClick={() => handleCheckout(plan.priceId)}
+                disabled={selectedPlan === plan.priceId}
                 className={`w-full py-4 rounded-lg font-semibold transition ${
                   plan.popular
                     ? 'bg-blue-600 hover:bg-blue-700 text-white'
                     : 'bg-white/10 hover:bg-white/20 text-white'
-                }`}
+                } disabled:opacity-50 disabled:cursor-not-allowed`}
               >
-                Get Started
+                {selectedPlan === plan.priceId ? 'Loading...' : 'Get Started'}
               </button>
             </div>
           ))}
