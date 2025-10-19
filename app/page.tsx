@@ -92,8 +92,8 @@ export default function Home() {
             <a href="#pricing" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition">
               Get Started
             </a>
-            <a href="#how-it-works" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">
-              How It Works
+            <a href="/dashboard" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">
+              Try Demo
             </a>
           </div>
         </div>
